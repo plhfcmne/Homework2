@@ -12,90 +12,122 @@ public class Main {
 
     public static void task1() {
         System.out.println("Задача 1");
-        var dog = 8.0;
-        var cat = 3.6;
-        var paper = 763789;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper);
+        int negativ=-20000;
+        byte melochApriyatno=12;
+        short flashStandart=32767;
+        long superRich=922300000000000L;
+        float neponyatnoe=45.3f;
+        double interestingNumber=-1.454556667676586;
+        System.out.println("Значение переменной negativ с типом int равно "+negativ);
+        System.out.println("Значение переменной melochApriyatno с типом byte равно "+melochApriyatno);
+        System.out.println("Значение переменной flashStandart с типом short равно "+flashStandart);
+        System.out.println("Значение переменной superRich с типом long равно "+superRich);
+        System.out.println("Значение переменной neponyatnoe с типом float равно "+neponyatnoe);
+        System.out.println("Значение переменной interestingNumber с типом double равно "+interestingNumber);
+
     }
 
     public static void task2() {
         System.out.println("Задача 2");
-        var dog = 8.0;
-        var cat = 3.6;
-        var paper = 763789;
-        dog = dog + 4;
-        cat = cat + 4;
-        paper = paper + 4;
-
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper);
+        int d=569;
+        byte f=67;
+        short e=-159;
+        short g=27897;
+        long a=987678965549L;
+        float b=27.12f;
+        float c=2.786f;
+        System.out.println("Значение переменной с типом int равно "+d);
+        System.out.println("Значение переменной с типом byte равно "+f);
+        System.out.println("Значение переменной с типом short равно "+g+" и "+e);
+        System.out.println("Значение переменной с типом long равно "+a);
+        System.out.println("Значение переменной с типом float равно "+b+" и "+c);
     }
 
     public static void task3() {
         System.out.println("Задача 3");
-        var dog = 8.0;
-        var cat = 3.6;
-        var paper = 763789;
-        dog = dog - 3.5;
-        cat = cat - 1.6;
-        paper = paper - 7639;
+        byte a=23;
+        byte b=27;
+        byte c=30;
+        int totalPupils= a+b+c;
+        short sheets=480;
+        int personalSheet=sheets/totalPupils;
+        System.out.println("Каждому ученику достанется по "+personalSheet+" листов");
 
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper);
     }
-
     public static void task4() {
         System.out.println("Задача 4");
-        var friend = 19;
-        System.out.println(friend);
-        friend = friend + 2;
-        System.out.println(friend);
-        friend = friend / 7;
-        System.out.println(friend);
-    }
+        byte zaMinutu=16/2;
+        short twentyMin= (short)(zaMinutu*20);
+        short oneDay=(short)(24*60*zaMinutu);
+        int threeDay=oneDay*3;
+        int oneMonth=oneDay*30;
+                System.out.println("За 20 минут машина произвела "+twentyMin+" штук бутылок");
+                System.out.println("За 1 день машина произвела "+oneDay+" штук бутылок");
+                System.out.println("За 3 дня машина произвела "+threeDay+" штук бутылок");
+                System.out.println("За 1 месяц машина произвела "+oneMonth+" штук бутылок");
 
+    }
     public static void task5() {
         System.out.println("Задача 5");
-        var frog = 3.5;
-        System.out.println(frog);
-        frog = frog * 10;
-        System.out.println(frog);
-        frog = frog / 3.5;
-        System.out.println(frog);
-        frog = frog + 4;
-        System.out.println(frog);
-    }
+        byte totalPaint=120;
+        byte whitePaint=2;
+        byte brownPaint=4;
+        byte forOneClass=(byte)(whitePaint+brownPaint);
+        byte totalClass=(byte)(totalPaint/forOneClass);
+        byte totalWhite=(byte)(whitePaint*totalClass);
+        byte totalBrown=(byte)(brownPaint*totalClass);
+        System.out.println("В школе, где "+totalClass+" классов, нужно "+totalWhite+" банок белой краски и "+totalBrown+" банок коричневой краски");
 
+    }
     public static void task6() {
         System.out.println("Задача 6");
-        var firstBoxer = 78.2;
-        var secondBoxer = 82.7;
-        var totalWeight = firstBoxer + secondBoxer;
-        System.out.println(totalWeight);
-        var deltaWeight = secondBoxer-firstBoxer;
-        System.out.println("Разница в весе боксеров "+deltaWeight+" кг");
+        byte weightBanana=80;
+        byte banana=5;
+        byte weighMilk=105;
+        byte volume=100;
+        short volumeMilk=200;
+        short milk=(short)(volumeMilk/volume);
+        byte weightIceCream=100;
+        byte iceCream=2;
+        byte weightEgg=70;
+        byte egg=4;
+        short weight=(short)(weightBanana*banana+weighMilk*milk+weightIceCream*iceCream+weightEgg*egg);
+        short kilo=1000;
+        float kiloWeight=weight/(float)kilo;
+        System.out.println("Вес спортзавтрака "+weight+" грамм или "+kiloWeight+" килограмм");
     }
     public static void task7() {
         System.out.println("Задача 7");
-        var firstBoxer = 78.2;
-        var secondBoxer = 82.7;
-        var deltaWeight = secondBoxer-firstBoxer;
-        System.out.println("Разница в весе боксеров "+deltaWeight+" кг");
-        deltaWeight = secondBoxer%firstBoxer;
-        System.out.println("Разница в весе боксеров "+deltaWeight+" кг");
+        byte aim=7;
+        short kilo=1000;
+        short a=250;
+        short b=500;
+        float dayA=aim*kilo/(float)a;
+        float dayB=aim*kilo/(float)b;
+        float middle=(a+b)/2f;
+        float dayM=aim*kilo/middle;
+        System.out.println("Спортсмену необходимо "+dayA+" дней при потере в весе ежедневно по "+a+" гр");
+        System.out.println("Спортсмену необходимо "+dayB+" дней при потере в весе ежедневно по "+b+" гр");
+        System.out.println("Спортсмену необходимо "+dayM+" дней при потере в весе в среднем ежедневно по "+middle+" гр");
+
     }
     public static void task8() {
         System.out.println("Задача 8");
-        var totalHours = 640;
-        var hoursPerson= 8;
-        var totalPerson = totalHours/hoursPerson;
-        System.out.println("Всего работников в компании - "+totalPerson+" человек");
-        totalPerson=totalPerson+94;
-        hoursPerson=totalHours/totalPerson;
-        System.out.println("Если в компании работает "+totalPerson+" человек, то всего "+hoursPerson+" часов работы может быть поделено между сотрудниками");
+        int mary=67760;
+        int den=83690;
+        int kristy=76230;
+        float prize=0.1f;
+        float totalPrize=1+prize;
+        float prizeMary=mary*totalPrize;
+        float prizeDen=den*totalPrize;
+        float prizeKristy=kristy*totalPrize;
+        byte year=12;
+        float deltaMary=prizeMary*year-mary*year;
+        float deltaDen=prizeDen*year-den*year;
+        float deltaKristy=prizeKristy*year-kristy*year;
+        System.out.println("Маша теперь получает "+prizeMary+" рублей. Годовой доход вырос на "+deltaMary+" рублей");
+        System.out.println("Денис теперь получает "+prizeDen+" рублей. Годовой доход вырос на "+deltaDen+" рублей");
+        System.out.println("Денис теперь получает "+prizeKristy+" рублей. Годовой доход вырос на "+deltaKristy+" рублей");
+
     }
 }

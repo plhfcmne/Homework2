@@ -108,7 +108,7 @@ public class Main {
         float dayM=aim*kilo/middle;
         System.out.println("Спортсмену необходимо "+dayA+" дней при потере в весе ежедневно по "+a+" гр");
         System.out.println("Спортсмену необходимо "+dayB+" дней при потере в весе ежедневно по "+b+" гр");
-        System.out.println("Спортсмену необходимо "+dayM+" дней при потере в весе в срреднем ежедневно по "+middle+" гр");
+        System.out.println("Спортсмену необходимо "+dayM+" дней при потере в весе в среднем ежедневно по "+middle+" гр");
 
     }
     public static void task8() {

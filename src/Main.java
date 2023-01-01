@@ -108,7 +108,7 @@ public class Main {
         float dayM=aim*kilo/middle;
         System.out.println("Спортсмену необходимо "+dayA+" дней при потере в весе ежедневно по "+a+" гр");
         System.out.println("Спортсмену необходимо "+dayB+" дней при потере в весе ежедневно по "+b+" гр");
-        System.out.println("Спортсмену необходимо "+dayM+" дней при потере в весе в среднем ежедневно по "+middle+" гр");
+        System.out.println("Спортсмену необходимо "+Math.round(dayM)+" дней при потере в весе в среднем ежедневно по "+middle+" гр");
 
     }
     public static void task8() {
@@ -116,7 +116,7 @@ public class Main {
         int mary=67760;
         int den=83690;
         int kristy=76230;
-        float prize=0.1f;
+        float prize=0.112354566f;
         float totalPrize=1+prize;
         float prizeMary=mary*totalPrize;
         float prizeDen=den*totalPrize;
@@ -125,9 +125,9 @@ public class Main {
         float deltaMary=prizeMary*year-mary*year;
         float deltaDen=prizeDen*year-den*year;
         float deltaKristy=prizeKristy*year-kristy*year;
-        System.out.println("Маша теперь получает "+prizeMary+" рублей. Годовой доход вырос на "+deltaMary+" рублей");
-        System.out.println("Денис теперь получает "+prizeDen+" рублей. Годовой доход вырос на "+deltaDen+" рублей");
-        System.out.println("Денис теперь получает "+prizeKristy+" рублей. Годовой доход вырос на "+deltaKristy+" рублей");
+        System.out.println("Маша теперь получает "+String.format("%.2f",prizeMary)+" рублей. Годовой доход вырос на "+deltaMary+" рублей");
+        System.out.println("Денис теперь получает "+String.format("%.2f",prizeDen)+" рублей. Годовой доход вырос на "+deltaDen+" рублей");
+        System.out.println("Кристина теперь получает "+String.format("%.2f",prizeKristy)+" рублей. Годовой доход вырос на "+deltaKristy+" рублей");
 
     }
 }
